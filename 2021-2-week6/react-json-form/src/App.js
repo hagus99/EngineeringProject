@@ -1,7 +1,6 @@
 import './App.css';
 import React,{useState,Component} from 'react';
 import Form from "@rjsf/core";
-import PropTypes from 'prop-types';
 
 function App() {
   const [clicked, setClicked] = useState(false);
@@ -20,8 +19,6 @@ function App() {
     );
   }
 
-    const log = (type) => console.log.bind(console, type);
-    
     
     return (
       <div className="App">
@@ -34,7 +31,7 @@ function App() {
             </div>
           </div>
           <div className="new-form">
-            {clicked? {schema}==' '? <div>No Content</div>:<NewForm/>:null}  
+            {clicked? {schema}==''? <div>No Content</div>:<NewForm/>:null}  
           </div> 
         </div>
       </div>

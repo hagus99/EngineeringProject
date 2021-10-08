@@ -1,5 +1,5 @@
 import './App.css';
-import React,{useState,Component} from 'react';
+import React,{useState} from 'react';
 import Form from "@rjsf/core";
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
             </div>
           </div>
           <div className="new-form">
-            {clicked? {schema}==''? <div>No Content</div>:<NewForm/>:null}  
+            {clicked? {schema}===''? <div>No Content</div>:<NewForm/>:null}  
           </div> 
         </div>
       </div>
